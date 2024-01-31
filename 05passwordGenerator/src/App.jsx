@@ -45,8 +45,12 @@ function App() {
 	
 
 	return (
-  
-		<div className="  w-full  max-w-md  mx-auto shadow-lg rounded-lg px-4 my-8 text-purple-950 bg-pink-300  p-6   ">
+      <div className="place-items-center p-10  m-10 scroll-px-80">
+        
+       
+		<div className="  h-screen flex items-center shadow-lg rounded-lg    justify-center m-auto   text-purple-950 bg-pink-300   p-20   ">
+
+      <div className=" flex flex-col m-auto">
 			<h1 className="text-purple-700  text-center my-3"> Password Generator</h1>
 			<div className=" flex-center  shadow-sm rounded-lg overflow-hidden  mb-4">
 				<input
@@ -105,7 +109,10 @@ function App() {
 					</label>
 				</div>
 			</div>
-		</div>
+      </div>
+      </div>
+      </div>
+		
   
 	);
 }
