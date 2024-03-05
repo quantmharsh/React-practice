@@ -7,9 +7,10 @@ const Todo = () => {
     const  dispatch =useDispatch();
   return (
     <div>Todo
-        {todos.map( (todo)=>( 
+        {todos.map((todo)=>( 
             <li key= {todo.id}>
                 {todo.text}
+
                 <button onClick={ ()=> dispatch(removeTodo(todo.id))}>
                     X
                 </button>
