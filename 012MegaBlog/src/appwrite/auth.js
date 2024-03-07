@@ -29,7 +29,8 @@ export class AuthService{
       }
       else{
         return userAccount;
-      }
+
+     }
         
      } catch (error) {
          throw error;
@@ -48,12 +49,13 @@ export class AuthService{
     }
     async getCurrentUser(){
         try{
+           
             return await this.account.get();
 
         }
         catch(error)
         {
-            throw error;
+         console.log("error while getting user"  ,error);
         }
         return null;
     }
