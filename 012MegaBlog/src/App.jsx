@@ -4,13 +4,14 @@ import React from 'react';
 import {  useDispatch } from 'react-redux';
 import Header from "./components/Header/Header";
 import  Footer from './components/Footer/Footer';
+import { Outlet } from 'react-router-dom'
 
 
 
-import './App.css'
+
 import {login  , logout} from './store/authSlice';
 
-import { Outlet } from 'react-router';
+
 
 function App() {
   const dispatch =  useDispatch();
@@ -49,7 +50,7 @@ useEffect(() => {
     <div className='w-full block' > 
     <Header/>
     <main>
-      {/* <Outlet/> */}
+    TODO:  <Outlet />
     </main>
     <Footer/>
 

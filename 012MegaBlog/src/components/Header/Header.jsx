@@ -1,7 +1,9 @@
 import React from 'react'
 import {Container , LogoutBtn ,Logo } from"../index"
 import { useSelector } from 'react-redux'
-import {useNavigate} from "react-router-dom"
+import {useNavigate  } from "react-router-dom"
+import { Link } from 'react-router-dom'
+
 
 const Header = () => {
   //useSelector have a callback which takes state only 
